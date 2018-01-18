@@ -1,13 +1,4 @@
 https://www.atlassian.com/git/tutorials/install-git
 
-MANAGE INFRASTRUCTURE USING CI CD PIPELINE IN AWS CLOUD:
 
-	1. Upload a Cloud Formation Template
-	2. Upload CF Template to S3 Bucket
-	3. The changes on S3 Bucket triggers a Pipeline execution
-	4. CP will create a Test Stack 
-	5. After testing Manual Approval is required
-	6. Changes are incorrect or has issues, the stack will be deleted
-	7. If the change are approved, A Production Stack will be created
-	8. Once approved, the change set will be deployed to Prod environment
 
