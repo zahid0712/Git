@@ -1,0 +1,53 @@
+Download -> Create a Folder -> cd <folder-name> -> $ git init
+
+GIT LIFE CYCLE WORKS AT THE BACKENDS:
+WORKING DIR -> CHANGES DONE -> ADD/REMOVE <-> STAGING AREA -> COMMIT CHANGES -> LOCAL REPOSITORY -> REMOTE REPOSITORY
+
+LAB-1
+HOW WE CAN CREATE THE BRANCHES ?
+$ git branch							# list all the branches
+$ git checkout <branch-name>			# switch to an existing branch 
+$ git checkout -b <branch-name>		# automatically create a new branch and switched
+$ ls -l 
+$ git add .
+$ git commit -m “added all source like master”	# 
+$ git push origin <branch-name>		# push the changes to new branch
+
+COMPARE AND PULL REQUESTS:
+We want to merge the latest changes to any branch
+DevOps -> New pull req -> Valid comments -> Create pull requests -> A POP would be appear to ur Git Admin
+Team Lead -> Merge pull requests -> Confirm merge 
+
+GitHub Desktop Tool:
+Install and play
+
+DELETE THE BRANCH FROM LOCAL:
+$ git branch							# List the existing branch
+$ git branch -d <branch-name>			# delete the existing branch
+$ git branch -D <branch-name>			# delete the existing branch
+$ git branch							# cross verify
+
+DELETE THE BRANCH FROM REMOTE:
+$ git branch 
+$ git push origin - -delete <branch-name>		# VVImp
+
+SUDDENLY NEED TO SWITCH TO DIFFERENT BRANCH:
+$ git branch										# DevOps branch
+$ vi <test-file>
+$ git status
+$ git add .
+$ git commit -m “added some changes in <branch>”
+Later
+$ git push origin DevOps
+
+GIT FETCH COMMAND:
+$ git branch
+$ git checkout master
+$ git pull origin DevOps						# Already up to date.
+Later
+$ git pull origin DevOps						# List the latest changes
+OR
+$ git fetch 
+$ git pull 
+$ git push 					# no need to pass like $ git push origin master
+
